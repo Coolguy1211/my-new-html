@@ -1,0 +1,35 @@
+:root    
+{
+    --main-bg-color: #ffcc00;
+    --main-text-color: #333333;
+}
+body {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+h1 {
+    color: #0066cc;
+}
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+#add some roundness to all
+button {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #005bb5;
+}
+.special {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #005bb5;
+}

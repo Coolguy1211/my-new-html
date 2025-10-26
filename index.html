@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>MY WEBSITE</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <H1>MY WEBSITE</H1>
+        <p>
+           
+            this is all i learned about html
+        </p>
+        <button onclick="alert(new Date().toLocaleDateString())">today is</button>
+        <p class="special">i had a great teacher</p>
+        <textarea name="text mixer" id="mixer"></textarea>
+                <textarea name="text mixer2" id="mixer2"></textarea>
+        <button onclick="mixText()">mix text</button>
+        <br>
+        <p id="mixedText"></p>
+        <p>next is me trying to use iframe</p>
+        <iframe src="https://www.example.com" width="300" height="200"></iframe>
+        <script>
+function mixText() {
+    var text1 = document.getElementById("mixer").value;
+    var text2 = document.getElementById("mixer2").value;
+    var mixedText = "";
+    var maxLength = Math.max(text1.length, text2.length);
+    for (var i = 0; i < maxLength; i++) {
+        if (i < text1.length) {
+            mixedText += text1.charAt(i);
+        }
+        if (i < text2.length) {
+            mixedText += text2.charAt(i);
+        }
+    }
+    document.getElementById("mixedText").innerText = mixedText;
+}
+
+
+
+
+        </script>
+    </body>
+</html>
